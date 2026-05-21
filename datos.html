@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <title>Catálogo</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="flecha-izquierda.png" alt=""></a>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <div>
+                <h1>
+                    Ya casi!
+                </h1>
+            </div>
+        </section>
+        <section id="datomain">
+            <div class="cliente">
+                <input type="text" id="clienteNombre" placeholder="Nombre y apellido">
+                <input type="text" id="clienteTelefono" placeholder="Teléfono">
+                <input type="text" id="clienteProvincia" placeholder="Provincia">
+                <input type="text" id="clienteDireccion" placeholder="Direccion">
+                <button onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+            </div>
+            <div id="carrito"></div>
+            <div id="totalCarrito">$0</div>
+        </section>
+    </main>
+    <div id="mensaje" class="mensaje"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</body>
+
+
+
+</html>

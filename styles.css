@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: "Delius", cursive;
+}
+
+.mensaje {
+    font-size: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #000;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 9999;
+    border: #b90101 solid 2px;
+}
+
+.mensaje.activo {
+    opacity: 1;
+}
+
+
+
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0049be;
+}
+
+.titulo div {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 30px 80px;
+    margin-top: 40px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    margin: 10px;
+}
+
+header img {
+    width: 40px;
+}
+
+.archivos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+
+
+.art__gr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    transition: .6s;
+    border-top: solid 3px #000;
+    width: 100%;
+}
+
+.art__ix img {
+    width: 300px;
+    height: auto;
+
+}
+
+
+
+.index__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 30px;
+}
+
+.art__ix {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    transition: .6s;
+    border-radius: 4vh;
+    border: solid 3px #000000;
+    box-shadow: 0px 0px 20px #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.art__ix a {
+    font-size: 50px;
+    color: #000;
+}
+
+.art__ix:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 26px #fff;
+    background-color: #0000008f;
+}
+
+
+.art__gr:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 26px #fff;
+    background-color: #0000008f;
+}
+
+
+
+
+
+.art__gr img {
+    width: 200px;
+    height: auto;
+
+}
+
+
+
+
+.cliente {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+#clienteNombre {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6vh;
+    border: solid 3px #000;
+}
+
+#clienteTelefono {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6vh;
+    border: solid 3px #000;
+}
+
+#clienteProvincia {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6vh;
+    border: solid 3px #000;
+}
+
+#clienteDireccion {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6vh;
+    border: solid 3px #000;
+}
+
+.ver {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6vh;
+    border: solid 3px #00e4e4;
+    box-shadow: 0px 0px 20px #000;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.ver:hover {
+    transform: scale(1.08);
+    background-color: #00e4e4;
+    border: solid 4px #000;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.enviar {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6vh;
+    border: solid 3px #00e4e4;
+    box-shadow: 0px 0px 20px #000;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.enviar:hover {
+    transform: scale(1.08);
+    background-color: #00e44c;
+    border: solid 4px #000;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #000;
+}
+
+#carrito ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#carrito li {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: #000;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.karrito {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.karrito img {
+    width: 50px;
+}
+
+#carrito strong {
+    margin-top: 20px;
+
+}
+
+#carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+
+}
+
+#datomain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ================================resumennn=========================== */
+.resumen {
+    background-color: aquamarine;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+#totalCarrito {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.finalizar {
+    background-color: aquamarine;
+    box-shadow: 0px 0px 20px #000;
+    font-size: 28px;
+    padding: 5px;
+}
